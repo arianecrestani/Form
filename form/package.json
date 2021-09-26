@@ -5,8 +5,7 @@
   "scripts": {
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "server": "vue-cli-service serve",
-    "start": "node server.js"
+    "server": "vue-cli-service serve"
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
