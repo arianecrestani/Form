@@ -2,27 +2,31 @@
   <div id="app">
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <h1>{{ title }}</h1>
-    <label for="">Name</label><br>
-    <input type="text" v-model="name">
+    <label for="">Name</label><br />
+    <input type="text" v-model="name" />
 
-    <br><br>
-    <label for="">Fone</label><br>
-    <input type="text" v-model="fone">
+    <br /><br />
+    <label for="">Fone</label><br />
+    <input type="text" v-model="fone" />
 
-     <br><br>
-    <label for="">you wish recerve News</label><br>
-    <input type="radio" v-model="news"> yes
-    <input type="radio" v-model="news"> No
+    <br /><br />
+    <label for="">you wish recerve News</label><br />
+    <input type="radio" v-model="news" /> yes
+    <input type="radio" v-model="news" /> No
 
-      <br><br>
-    <label for="">intersting</label><br>
-    <input type="checkbox" v-model="intersting"> moda
-    <input type="checkbox" v-model="intersting"> sport
-    <input type="checkbox" v-model="intersting"> beauty
+    <br /><br />
+    <label for="">intersting</label><br />
+    <input type="checkbox" v-model="intersting" /> moda
+    <input type="checkbox" v-model="intersting" /> sport
+    <input type="checkbox" v-model="intersting" /> beauty
 
-
-
-
+    <br /><br />
+    <label for="">how you met us</label><br />
+    <select v-model="met">
+      <option value="">choice</option>
+      <option value="Google">Google </option
+      ><option value="social media">choice </option></select
+    >
   </div>
 </template>
 
@@ -41,13 +45,8 @@ export default {
       lastName: "",
     };
   },
-  computed: {
-   
-  },
-  methods: {
- 
-  
-  },
+  computed: {},
+  methods: {},
 };
 </script>
 
