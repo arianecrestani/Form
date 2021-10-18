@@ -1,19 +1,54 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>{{ title }}</h1>
+    <label for="">Name</label><br>
+    <input type="text" v-model="name">
+
+    <br><br>
+    <label for="">Fone</label><br>
+    <input type="text" v-model="fone">
+
+     <br><br>
+    <label for="">you wish recerve News</label><br>
+    <input type="radio" v-model="news"> yes
+    <input type="radio" v-model="news"> No
+
+      <br><br>
+    <label for="">intersting</label><br>
+    <input type="checkbox" v-model="intersting"> moda
+    <input type="checkbox" v-model="intersting"> sport
+    <input type="checkbox" v-model="intersting"> beauty
+
+
+
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+  },
+  data: () => {
+    return {
+      titulo: "doing forms",
+      firstName: "",
+      lastName: "",
+    };
+  },
+  computed: {
+   
+  },
+  methods: {
+ 
+  
+  },
+};
 </script>
 
 <style>
