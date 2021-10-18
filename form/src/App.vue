@@ -38,7 +38,6 @@
     News: {{ news }} <br>
     Intersting: {{ interest }} <br>
     Met: {{ met }} <br>
-
   </div>
 </template>
 
@@ -71,5 +70,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color:thistle;
 }
 </style>
