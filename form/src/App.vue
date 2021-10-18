@@ -10,15 +10,15 @@
     <input type="text" v-model="fone" />
 
     <br /><br />
-    <label for="">you wish recerve News</label><br />
-    <input type="radio" v-model="news" /> yes
-    <input type="radio" v-model="news" /> No
+    <label for="">you wish recerving News</label><br />
+    <input type="radio" value="yes" v-model="news" /> yes
+    <input type="radio" value="No" v-model="news" /> No
 
     <br /><br />
-    <label for="">intersting</label><br />
-    <input type="checkbox" v-model="intersting" /> moda
-    <input type="checkbox" v-model="intersting" /> sport
-    <input type="checkbox" v-model="intersting" /> beauty
+    <label for="">interest</label><br />
+    <input type="checkbox" value="moda" v-model="interest" /> moda
+    <input type="checkbox" value="sport" v-model="interest" /> sport
+    <input type="checkbox" value="beauty" v-model="interest" /> beauty
 
     <br /><br />
     <label for="">how you met us</label><br />
@@ -33,7 +33,12 @@
 
     <hr>
     
-    Nome: {{nome}}
+    Nome: {{ nome }} <br>
+    fone: {{ fone }} <br>
+    news: {{ news }} <br>
+    intersting: {{ interest }} <br>
+    met: {{ met }} <br>
+
   </div>
 </template>
 
@@ -51,7 +56,7 @@ export default {
       name: "",
       fone: "",
       news:"",
-      intersting: "",
+      interest: "",
       met:"",
     };
   },
