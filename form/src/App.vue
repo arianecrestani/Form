@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="Welcome to Form" />
+  <div id="app" class="bg-black-300" >
+    <HelloWorld msg="Welcome to Form"/>
     <h1>{{ title }}</h1>
     <label>Name</label><br />
     <input type="text" v-model="name" />
@@ -44,6 +44,7 @@
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 
+
 export default {
   name: "App",
   components: {
@@ -73,3 +74,5 @@ export default {
   background-color:thistle;
 }
 </style>
+
+
