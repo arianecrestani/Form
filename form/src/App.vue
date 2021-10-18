@@ -56,7 +56,7 @@ export default {
       name: "",
       fone: "",
       news:"",
-      interest: "",
+      interest: [],
       met:"",
     };
   },
