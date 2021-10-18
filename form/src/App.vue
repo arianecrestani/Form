@@ -1,21 +1,21 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld msg="Welcome to Form" />
     <h1>{{ title }}</h1>
-    <label for="">Name</label><br />
+    <label>Name</label><br />
     <input type="text" v-model="name" />
 
     <br /><br />
-    <label for="">Fone</label><br />
+    <label>Fone</label><br />
     <input type="text" v-model="fone" />
 
     <br /><br />
-    <label for="">you wish recerving News</label><br />
+    <label>you wish recerving News</label><br />
     <input type="radio" value="yes" v-model="news" /> yes
     <input type="radio" value="No" v-model="news" /> No
 
     <br /><br />
-    <label for="">interest</label><br />
+    <label>interest</label><br />
     <input type="checkbox" value="moda" v-model="interest" /> moda
     <input type="checkbox" value="sport" v-model="interest" /> sport
     <input type="checkbox" value="beauty" v-model="interest" /> beauty
@@ -25,7 +25,7 @@
     <select v-model="met">
       <option value="">choice</option>
       <option value="Google">Google </option
-      ><option value="social media">choice </option></select
+      ><option value="social media">social media</option></select
     >
     <br><br>
 
@@ -33,7 +33,7 @@
 
     <hr>
     
-    Nome: {{ nome }} <br>
+    Nome: {{ name }} <br>
     fone: {{ fone }} <br>
     news: {{ news }} <br>
     intersting: {{ interest }} <br>
