@@ -27,6 +27,13 @@
       <option value="Google">Google </option
       ><option value="social media">choice </option></select
     >
+    <br><br>
+
+    <button>Send</button>
+
+    <hr>
+    
+    Nome: {{nome}}
   </div>
 </template>
 
@@ -41,8 +48,11 @@ export default {
   data: () => {
     return {
       titulo: "doing forms",
-      firstName: "",
-      lastName: "",
+      name: "",
+      fone: "",
+      news:"",
+      intersting: "",
+      met:"",
     };
   },
   computed: {},
